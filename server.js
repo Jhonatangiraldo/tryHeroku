@@ -12,4 +12,5 @@ app.get('/index', function(request, response) {
     response.json(responseService);
 });
 
-app.listen(8080);
+var port = process.env.PORT || 8080;
+app.listen(port);
